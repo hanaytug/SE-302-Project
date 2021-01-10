@@ -15,6 +15,9 @@ namespace WindowsFormsApp1
         public Form2()
         {
             InitializeComponent();
+
+
+
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -40,6 +43,62 @@ namespace WindowsFormsApp1
         private void label14_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox3_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtCourseName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtTheory_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if(!Char.IsDigit(ch)&& ch!= 8 && ch != 46) // 8 is a backspace key 56 is a delete key
+            {
+
+                e.Handled = true;
+
+            }
+        }
+
+        private void txtApplication_KeyPress(object sender, KeyPressEventArgs e)
+        {
+
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46) // 8 is a backspace key 56 is a delete key
+            {
+
+                e.Handled = true;
+
+            }
+
+        }
+
+        private void txtLocalCredits_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46) // 8 is a backspace key 56 is a delete key
+            {
+
+                e.Handled = true;
+
+            }
+        }
+
+        private void txtECTS_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!Char.IsDigit(ch) && ch != 8 && ch != 46) // 8 is a backspace key 56 is a delete key
+            {
+
+                e.Handled = true;
+
+            }
         }
     }
 }
