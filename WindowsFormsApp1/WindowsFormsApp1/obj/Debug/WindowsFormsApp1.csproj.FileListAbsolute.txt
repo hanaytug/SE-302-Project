@@ -19,3 +19,9 @@ C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsA
 C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.ResolveComReference.cache
+C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SautinSoft.Document.dll
+C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsApp1\bin\Debug\SautinSoft.Document.xml
+C:\Users\BARTH\OneDrive\Masaüstü\SE-302-Project\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CopyComplete

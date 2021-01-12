@@ -33,9 +33,9 @@ namespace WindowsFormsApp1
             this.editButton = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.listView2 = new System.Windows.Forms.ListView();
             this.button5 = new System.Windows.Forms.Button();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.listView2 = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // button1
@@ -92,15 +92,6 @@ namespace WindowsFormsApp1
             this.button4.Text = "Export";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // listView2
-            // 
-            this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(272, 64);
-            this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(662, 386);
-            this.listView2.TabIndex = 4;
-            this.listView2.UseCompatibleStateImageBehavior = false;
-            // 
             // button5
             // 
             this.button5.BackColor = System.Drawing.SystemColors.Highlight;
@@ -113,6 +104,15 @@ namespace WindowsFormsApp1
             this.button5.TabIndex = 5;
             this.button5.Text = "Help";
             this.button5.UseVisualStyleBackColor = false;
+            // 
+            // listView2
+            // 
+            this.listView2.HideSelection = false;
+            this.listView2.Location = new System.Drawing.Point(272, 64);
+            this.listView2.Name = "listView2";
+            this.listView2.Size = new System.Drawing.Size(662, 386);
+            this.listView2.TabIndex = 4;
+            this.listView2.UseCompatibleStateImageBehavior = false;
             // 
             // Form1
             // 
@@ -139,9 +139,9 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Button editButton;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.ListView listView2;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.ListView listView2;
     }
 }
 

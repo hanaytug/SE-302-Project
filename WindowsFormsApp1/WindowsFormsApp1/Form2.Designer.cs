@@ -72,12 +72,22 @@ namespace WindowsFormsApp1
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
-            this.txtCourseObjectives = new System.Windows.Forms.TextBox();
-            this.txtLearningOutcomes = new System.Windows.Forms.TextBox();
-            this.txtDescription = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox2 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox3 = new System.Windows.Forms.RichTextBox();
+            this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
+            this.richTextBox7 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox8 = new System.Windows.Forms.RichTextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.richTextBox9 = new System.Windows.Forms.RichTextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
+            this.tableLayoutPanel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -95,7 +105,7 @@ namespace WindowsFormsApp1
             this.txtCourseId.Location = new System.Drawing.Point(3, 62);
             this.txtCourseId.Multiline = true;
             this.txtCourseId.Name = "txtCourseId";
-            this.txtCourseId.Size = new System.Drawing.Size(94, 44);
+            this.txtCourseId.Size = new System.Drawing.Size(92, 44);
             this.txtCourseId.TabIndex = 1;
             // 
             // label2
@@ -112,7 +122,7 @@ namespace WindowsFormsApp1
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(103, 0);
+            this.label3.Location = new System.Drawing.Point(101, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(30, 17);
             this.label3.TabIndex = 4;
@@ -122,7 +132,7 @@ namespace WindowsFormsApp1
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(223, 0);
+            this.label4.Location = new System.Drawing.Point(219, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 17);
             this.label4.TabIndex = 6;
@@ -132,7 +142,7 @@ namespace WindowsFormsApp1
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(363, 0);
+            this.label5.Location = new System.Drawing.Point(359, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(53, 17);
             this.label5.TabIndex = 8;
@@ -147,7 +157,7 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 98F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 137F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 85F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 108F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 112F));
             this.tableLayoutPanel1.Controls.Add(this.txtECTS, 6, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtLocalCredits, 5, 1);
             this.tableLayoutPanel1.Controls.Add(this.txtApplication, 4, 1);
@@ -175,25 +185,28 @@ namespace WindowsFormsApp1
             // 
             // txtECTS
             // 
-            this.txtECTS.Location = new System.Drawing.Point(683, 62);
+            this.txtECTS.Location = new System.Drawing.Point(679, 62);
             this.txtECTS.Multiline = true;
             this.txtECTS.Name = "txtECTS";
+            this.txtECTS.ReadOnly = true;
             this.txtECTS.Size = new System.Drawing.Size(101, 44);
             this.txtECTS.TabIndex = 20;
             this.txtECTS.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtECTS_KeyPress);
             // 
             // txtLocalCredits
             // 
-            this.txtLocalCredits.Location = new System.Drawing.Point(598, 62);
+            this.txtLocalCredits.Location = new System.Drawing.Point(594, 62);
             this.txtLocalCredits.Multiline = true;
             this.txtLocalCredits.Name = "txtLocalCredits";
+            this.txtLocalCredits.ReadOnly = true;
             this.txtLocalCredits.Size = new System.Drawing.Size(79, 44);
             this.txtLocalCredits.TabIndex = 19;
+            this.txtLocalCredits.TextChanged += new System.EventHandler(this.txtLocalCredits_TextChanged);
             this.txtLocalCredits.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtLocalCredits_KeyPress);
             // 
             // txtApplication
             // 
-            this.txtApplication.Location = new System.Drawing.Point(461, 62);
+            this.txtApplication.Location = new System.Drawing.Point(457, 62);
             this.txtApplication.Multiline = true;
             this.txtApplication.Name = "txtApplication";
             this.txtApplication.Size = new System.Drawing.Size(131, 44);
@@ -202,7 +215,7 @@ namespace WindowsFormsApp1
             // 
             // txtTheory
             // 
-            this.txtTheory.Location = new System.Drawing.Point(363, 62);
+            this.txtTheory.Location = new System.Drawing.Point(359, 62);
             this.txtTheory.Multiline = true;
             this.txtTheory.Name = "txtTheory";
             this.txtTheory.Size = new System.Drawing.Size(92, 44);
@@ -211,7 +224,7 @@ namespace WindowsFormsApp1
             // 
             // txtSpring
             // 
-            this.txtSpring.Location = new System.Drawing.Point(223, 62);
+            this.txtSpring.Location = new System.Drawing.Point(219, 62);
             this.txtSpring.Multiline = true;
             this.txtSpring.Name = "txtSpring";
             this.txtSpring.Size = new System.Drawing.Size(134, 44);
@@ -219,7 +232,7 @@ namespace WindowsFormsApp1
             // 
             // txtFall
             // 
-            this.txtFall.Location = new System.Drawing.Point(103, 62);
+            this.txtFall.Location = new System.Drawing.Point(101, 62);
             this.txtFall.Multiline = true;
             this.txtFall.Name = "txtFall";
             this.txtFall.Size = new System.Drawing.Size(107, 44);
@@ -229,7 +242,7 @@ namespace WindowsFormsApp1
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.Control;
-            this.label7.Location = new System.Drawing.Point(598, 0);
+            this.label7.Location = new System.Drawing.Point(594, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 34);
             this.label7.TabIndex = 10;
@@ -239,7 +252,7 @@ namespace WindowsFormsApp1
             // 
             this.label6.AutoSize = true;
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(461, 0);
+            this.label6.Location = new System.Drawing.Point(457, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(105, 17);
             this.label6.TabIndex = 9;
@@ -249,7 +262,7 @@ namespace WindowsFormsApp1
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(683, 0);
+            this.label8.Location = new System.Drawing.Point(679, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(44, 17);
             this.label8.TabIndex = 11;
@@ -505,12 +518,12 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.14793F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.85207F));
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel3.Controls.Add(this.richTextBox3, 1, 2);
+            this.tableLayoutPanel3.Controls.Add(this.richTextBox2, 1, 1);
+            this.tableLayoutPanel3.Controls.Add(this.richTextBox1, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.label17, 0, 2);
             this.tableLayoutPanel3.Controls.Add(this.label18, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.label19, 0, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txtCourseObjectives, 1, 0);
-            this.tableLayoutPanel3.Controls.Add(this.txtLearningOutcomes, 1, 1);
-            this.tableLayoutPanel3.Controls.Add(this.txtDescription, 1, 2);
             this.tableLayoutPanel3.Location = new System.Drawing.Point(30, 552);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 3;
@@ -551,29 +564,133 @@ namespace WindowsFormsApp1
             this.label19.TabIndex = 3;
             this.label19.Text = "Course Objectives";
             // 
-            // txtCourseObjectives
+            // button1
             // 
-            this.txtCourseObjectives.Location = new System.Drawing.Point(342, 3);
-            this.txtCourseObjectives.Multiline = true;
-            this.txtCourseObjectives.Name = "txtCourseObjectives";
-            this.txtCourseObjectives.Size = new System.Drawing.Size(331, 42);
-            this.txtCourseObjectives.TabIndex = 6;
+            this.button1.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(962, 945);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(171, 57);
+            this.button1.TabIndex = 31;
+            this.button1.Text = "Create File";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // txtLearningOutcomes
+            // richTextBox1
             // 
-            this.txtLearningOutcomes.Location = new System.Drawing.Point(342, 51);
-            this.txtLearningOutcomes.Multiline = true;
-            this.txtLearningOutcomes.Name = "txtLearningOutcomes";
-            this.txtLearningOutcomes.Size = new System.Drawing.Size(331, 40);
-            this.txtLearningOutcomes.TabIndex = 7;
+            this.richTextBox1.Location = new System.Drawing.Point(342, 3);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(331, 40);
+            this.richTextBox1.TabIndex = 32;
+            this.richTextBox1.Text = "";
             // 
-            // txtDescription
+            // richTextBox2
             // 
-            this.txtDescription.Location = new System.Drawing.Point(342, 97);
-            this.txtDescription.Multiline = true;
-            this.txtDescription.Name = "txtDescription";
-            this.txtDescription.Size = new System.Drawing.Size(331, 60);
-            this.txtDescription.TabIndex = 8;
+            this.richTextBox2.Location = new System.Drawing.Point(342, 51);
+            this.richTextBox2.Name = "richTextBox2";
+            this.richTextBox2.Size = new System.Drawing.Size(331, 40);
+            this.richTextBox2.TabIndex = 33;
+            this.richTextBox2.Text = "";
+            // 
+            // richTextBox3
+            // 
+            this.richTextBox3.Location = new System.Drawing.Point(342, 97);
+            this.richTextBox3.Name = "richTextBox3";
+            this.richTextBox3.Size = new System.Drawing.Size(331, 60);
+            this.richTextBox3.TabIndex = 34;
+            this.richTextBox3.Text = "";
+            // 
+            // tableLayoutPanel5
+            // 
+            this.tableLayoutPanel5.ColumnCount = 2;
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50.14793F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 49.85207F));
+            this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Controls.Add(this.richTextBox7, 1, 2);
+            this.tableLayoutPanel5.Controls.Add(this.richTextBox8, 1, 0);
+            this.tableLayoutPanel5.Controls.Add(this.label23, 0, 2);
+            this.tableLayoutPanel5.Controls.Add(this.label24, 0, 1);
+            this.tableLayoutPanel5.Controls.Add(this.label25, 0, 0);
+            this.tableLayoutPanel5.Controls.Add(this.richTextBox9, 1, 1);
+            this.tableLayoutPanel5.Location = new System.Drawing.Point(33, 720);
+            this.tableLayoutPanel5.Name = "tableLayoutPanel5";
+            this.tableLayoutPanel5.RowCount = 3;
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 51.51515F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 48.48485F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(676, 160);
+            this.tableLayoutPanel5.TabIndex = 33;
+            // 
+            // richTextBox7
+            // 
+            this.richTextBox7.Location = new System.Drawing.Point(342, 97);
+            this.richTextBox7.Name = "richTextBox7";
+            this.richTextBox7.Size = new System.Drawing.Size(331, 60);
+            this.richTextBox7.TabIndex = 34;
+            this.richTextBox7.Text = "";
+            // 
+            // richTextBox8
+            // 
+            this.richTextBox8.Location = new System.Drawing.Point(342, 3);
+            this.richTextBox8.Name = "richTextBox8";
+            this.richTextBox8.Size = new System.Drawing.Size(331, 40);
+            this.richTextBox8.TabIndex = 32;
+            this.richTextBox8.Text = "";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.ForeColor = System.Drawing.SystemColors.Control;
+            this.label23.Location = new System.Drawing.Point(3, 94);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(128, 17);
+            this.label23.TabIndex = 5;
+            this.label23.Text = "Course Description";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.ForeColor = System.Drawing.SystemColors.Control;
+            this.label24.Location = new System.Drawing.Point(3, 48);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(132, 17);
+            this.label24.TabIndex = 4;
+            this.label24.Text = "Learning Outcomes";
+            // 
+            // richTextBox9
+            // 
+            this.richTextBox9.Location = new System.Drawing.Point(342, 51);
+            this.richTextBox9.Name = "richTextBox9";
+            this.richTextBox9.Size = new System.Drawing.Size(331, 40);
+            this.richTextBox9.TabIndex = 33;
+            this.richTextBox9.Text = "";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.ForeColor = System.Drawing.SystemColors.Control;
+            this.label25.Location = new System.Drawing.Point(3, 0);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(123, 17);
+            this.label25.TabIndex = 3;
+            this.label25.Text = "Course Objectives";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.Highlight;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button2.Location = new System.Drawing.Point(751, 945);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(171, 57);
+            this.button2.TabIndex = 34;
+            this.button2.Text = "Save All";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form2
             // 
@@ -581,7 +698,10 @@ namespace WindowsFormsApp1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
-            this.ClientSize = new System.Drawing.Size(1225, 953);
+            this.ClientSize = new System.Drawing.Size(1282, 1055);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.tableLayoutPanel5);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.tableLayoutPanel3);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.checkThirdCycle);
@@ -610,6 +730,8 @@ namespace WindowsFormsApp1
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
             this.tableLayoutPanel3.PerformLayout();
+            this.tableLayoutPanel5.ResumeLayout(false);
+            this.tableLayoutPanel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -660,8 +782,17 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.TextBox txtCourseObjectives;
-        private System.Windows.Forms.TextBox txtLearningOutcomes;
-        private System.Windows.Forms.TextBox txtDescription;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RichTextBox richTextBox3;
+        private System.Windows.Forms.RichTextBox richTextBox2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel5;
+        private System.Windows.Forms.RichTextBox richTextBox7;
+        private System.Windows.Forms.RichTextBox richTextBox8;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.RichTextBox richTextBox9;
+        private System.Windows.Forms.Button button2;
     }
 }
