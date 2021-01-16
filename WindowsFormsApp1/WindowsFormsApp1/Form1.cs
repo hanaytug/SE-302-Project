@@ -27,5 +27,17 @@ namespace WindowsFormsApp1
         {
 
         }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            listView2.Columns.Add("Course Name", 120);
+            listView2.Columns.Add("Lecturer Name", 120);
+            listView2.Columns.Add("Syllabus", 500);
+        }
     }
 }

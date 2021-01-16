@@ -107,24 +107,27 @@ namespace WindowsFormsApp1
             // 
             // listView2
             // 
+            this.listView2.GridLines = true;
             this.listView2.HideSelection = false;
-            this.listView2.Location = new System.Drawing.Point(272, 64);
+            this.listView2.Location = new System.Drawing.Point(319, 64);
             this.listView2.Name = "listView2";
-            this.listView2.Size = new System.Drawing.Size(662, 386);
-            this.listView2.TabIndex = 4;
+            this.listView2.Size = new System.Drawing.Size(685, 386);
+            this.listView2.TabIndex = 6;
             this.listView2.UseCompatibleStateImageBehavior = false;
+            this.listView2.View = System.Windows.Forms.View.Details;
             // 
             // Form1
             // 
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(36)))), ((int)(((byte)(49)))));
             this.ClientSize = new System.Drawing.Size(1134, 575);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.listView2);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.editButton);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
